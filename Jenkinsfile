@@ -8,5 +8,10 @@ pipeline {
         git(url: 'https://github.com/jidegithub/nuxt-storefront', branch: 'main')
       }
     }
+    stage('Test') {
+      steps {
+        sh 'node --version'
+      }
+    }
   }
 }
