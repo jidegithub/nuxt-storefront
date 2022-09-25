@@ -10,7 +10,7 @@ pipeline {
     }
     stage('frontend-unit-test') {
       steps {
-        sh 'npm run test'
+        sh 'node --version && npm run test'
       }
     }
   }
